@@ -6,7 +6,8 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     paddingVertical: theme.CONTAINER_PADDING,
-    alignItems: "center"
+    flexDirection: "column",
+    justifyContent: "space-between"
   },
   titleHeading: {
     ...headingText
@@ -22,5 +23,22 @@ export default StyleSheet.create({
   textArea: {
     ...textInput,
     flex: 1
+  },
+  bottomBar: {
+    flexDirection: "row",
+    alignItems: "center"
+  },
+  bottomBarWrapper: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    flex: 1
+  },
+  saveBtn: {
+    padding: 10,
+    fontWeight: theme.FONT_WEIGHT_BOLD
+  },
+  characterCount: {
+    padding: 10,
+    fontSize: theme.FONT_SIZE_SMALL
   }
 });
